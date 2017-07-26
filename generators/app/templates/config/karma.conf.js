@@ -12,10 +12,10 @@ module.exports = function (config) {
         'files': [
             '../bower_components/jquery/dist/jquery.js',
             '../node_modules/phantomjs-polyfill-object-assign/object-assign-polyfill.js',
-            '../dist/web-manage-my-booking.dependencies.min.js',
-            '../dist/web-manage-my-booking.min.js',
+            '../dist/<%=data.componentName%>.dependencies.min.js',
+            '../dist/<%=data.componentName%>.min.js',
             '../node_modules/angular-mocks/angular-mocks.js',
-            '../dist/web-manage-my-booking.templates.js',
+            '../dist/<%=data.componentName%>.templates.js',
             '../test/unit/components/**/*-test.js',
             '../test/unit/*-test.js'
             // if you wanna load template files in nested directories, you must use this
@@ -25,7 +25,7 @@ module.exports = function (config) {
         'exclude': [],
         // preprocess matching files before serving them to the browser
         // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
-        'preprocessors': { '../dist/web-manage-my-booking.min.js': ['coverage'], '**/*.html': ['ng-html2js'] },
+        'preprocessors': { '../dist/<%=data.componentName%>.min.js': ['coverage'], '**/*.html': ['ng-html2js'] },
         // test results reporter to use
         // possible values: 'dots', 'progress'
         // available reporters: https://npmjs.org/browse/keyword/karma-reporter
