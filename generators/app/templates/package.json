@@ -73,6 +73,7 @@
     "run-sequence": "1.2.1",
     "wiredep": "4.0.0",
     "wrench": "1.5.9",
-    "protractor-jasmine2-screenshot-reporter": "0.1.4"
+    "protractor-jasmine2-screenshot-reporter": "0.1.4",
+    "bower-nexus3-resolver" : "1.0.2"
   }
 }
