@@ -1,0 +1,22 @@
+{
+  "name": "web-manage-my-booking",
+  "description": "Manage my booking bower dependencies",
+  "main": "src/index.html",
+  "authors": [
+    "everis"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+    
+  }
+}

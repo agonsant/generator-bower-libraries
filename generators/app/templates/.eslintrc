@@ -1,0 +1,6 @@
+{
+  "extends": [
+    "angular",
+     "./config/lint/.eslintrc"
+  ]
+}

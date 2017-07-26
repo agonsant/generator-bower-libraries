@@ -1,0 +1,12 @@
+/bower_components/
+/node_modules/
+/release/
+/dist/
+/reports/
+/css/
+npm-debug.log
+/share/
+*.zip*
+/.idea
+.bowerrc
+.vscode

@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Alejandro González Santiago",
+      "authorEmail": "alejandrogsa@gmail.com",
+      "authorUrl": "https://github.com/agonsant"
+    }
+  }
+}

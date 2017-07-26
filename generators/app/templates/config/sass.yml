@@ -1,0 +1,195 @@
+linters:
+  BangFormat:
+    enabled: false
+  BemDepth:
+    enabled: "true,"
+    max_elements: 1
+  BorderZero:
+    convention: zero
+    enabled: true
+  ColorKeyword:
+    enabled: true
+  ColorVariable:
+    enabled: true
+  Comment:
+    enabled: true
+  ? "Compass::*"
+  :
+    enabled: false
+  DebugStatement:
+    enabled: true
+  DeclarationOrder:
+    enabled: false
+  DisableLinterReason:
+    enabled: true
+  DuplicateProperty:
+    enabled: false
+  ElsePlacement:
+    enabled: true
+    style: same_line
+  EmptyLineBetweenBlocks:
+    enabled: true
+    ignore_single_line_blocks: true
+  EmptyRule:
+    enabled: true
+  ExtendDirective:
+    enabled: false
+  FinalNewline:
+    enabled: false
+  HexLength:
+    enabled: true
+    style: long
+  HexNotation:
+    enabled: true
+    style: lowercase
+  HexValidation:
+    enabled: true
+  IdSelector:
+    enabled: true
+  ImportPath:
+    enabled: true
+    filename_extension: false
+    leading_underscore: false
+  ImportantRule:
+    enabled: true
+  Indentation:
+    allow_non_nested_indentation: false
+    character: space
+    enabled: true
+    width: 2
+  LeadingZero:
+    enabled: true
+    style: exclude_zero
+  MergeableSelector:
+    enabled: true
+    force_nesting: true
+  NameFormat:
+    allow_leading_underscore: false
+    convention: hyphenated_lowercase
+    enabled: false
+  NestingDepth:
+    enabled: true
+    ignore_parent_selectors: false
+    max_depth: 5
+  PlaceholderInExtend:
+    enabled: true
+  PropertyCount:
+    enabled: false
+    include_nested: false
+    max_properties: 10
+  PropertySortOrder:
+    enabled: false
+    ignore_unspecified: false
+    min_properties: 2
+    separate_groups: false
+  PropertySpelling:
+    enabled: true
+    extra_properties: []
+  PropertyUnits:
+    enabled: true
+    global:
+      - ch
+      - em
+      - ex
+      - rem
+      - cm
+      - in
+      - mm
+      - pc
+      - pt
+      - px
+      - q
+      - vh
+      - vw
+      - vmin
+      - vmax
+      - deg
+      - grad
+      - rad
+      - turn
+      - ms
+      - s
+      - Hz
+      - kHz
+      - dpi
+      - dpcm
+      - dppx
+      - "%"
+    properties: {}
+
+  PseudoElement:
+    enabled: false
+  QualifyingElement:
+    allow_element_with_attribute: false
+    allow_element_with_class: false
+    allow_element_with_id: false
+    enabled: true
+  SelectorDepth:
+    enabled: true
+    max_depth: 5
+  SelectorFormat:
+    convention: hyphenated_lowercase
+    enabled: false
+  Shorthand:
+    allowed_shorthands:
+      - 1
+      - 2
+      - 3
+    enabled: true
+  SingleLinePerProperty:
+    allow_single_line_rule_sets: false
+    enabled: true
+  SingleLinePerSelector:
+    enabled: false
+  SpaceAfterComma:
+    enabled: true
+    style: one_space
+  SpaceAfterPropertyColon:
+    enabled: true
+    style: one_space
+  SpaceAfterPropertyName:
+    enabled: true
+  SpaceAfterVariableName:
+    enabled: true
+  SpaceAroundOperator:
+    enabled: true
+    style: one_space
+  SpaceBeforeBrace:
+    allow_single_line_padding: false
+    enabled: true
+    style: space
+  SpaceBetweenParens:
+    enabled: true
+    spaces: 0
+  StringQuotes:
+    enabled: true
+    style: single_quotes
+  TrailingSemicolon:
+    enabled: true
+  TrailingWhitespace:
+    enabled: true
+  TrailingZero:
+    enabled: false
+  TransitionAll:
+    enabled: true
+  UnnecessaryMantissa:
+    enabled: true
+  UnnecessaryParentReference:
+    enabled: true
+  UrlFormat:
+    enabled: true
+  UrlQuotes:
+    enabled: true
+  VariableForProperty:
+    enabled: false
+    properties: []
+  VendorPrefix:
+    additional_identifiers: []
+    enabled: true
+    excluded_identifiers: []
+    identifier_list: base
+  ZeroUnit:
+    enabled: true
+plugin_directories:
+  - .scss-linters
+plugin_gems: []
