@@ -15,7 +15,14 @@ module.exports = class extends Generator {
       name: 'componentName',
       message: 'What is your bower component name?',
       default: this.appname
-    }];
+    },
+    {
+      type: 'input',
+      name: 'author',
+      message: 'What is the component author?',
+      default: ''
+    }
+    ];
 
     return this.prompt(prompts).then(props => {
       // To access props later use this.props.someAnswer;
@@ -25,28 +32,22 @@ module.exports = class extends Generator {
 
   writing() {
     var i = 0;
-    var files = ['.eslintrc', 'bower.json', 'gulpfile.js', 'package.json', 'README.md', 'version.txt'];
-    var directories = ['config', 'npm-gulp-tasks', 'scss', 'src', 'test'];
+    var files = ['.eslintrc', 'bower.json', 'gulpfile.js', 'package.json', 'README.md', 'version.txt', 'config', 'npm-gulp-tasks', 'scss', 'src', 'test'];
     for (i = 0; i < files.length; i++) {
-      this.fs.copy(
+      this.fs.copyTpl(
         this.templatePath(files[i]),
-        this.destinationPath(files[i])
+        this.destinationPath(files[i]),
+        { data: this.props }
       );
     }
-    this.fs.copy(
+    this.fs.copyTpl(
       this.templatePath('_gitignore'),
       this.destinationPath('.gitignore')
     );
-    for (i = 0; i < directories.length; i++) {
-      this.fs.copyTpl(
-        this.templatePath(directories[i]),
-        this.destinationPath(directories[i])
-      );
-    }
   }
 
   install() {
-    this.npmInstall();
-    this.runInstall('bower');
+    /*this.npmInstall();
+    this.runInstall('bower');*/
   }
 };

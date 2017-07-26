@@ -1,8 +1,8 @@
 {
-  "name": "web-manage-my-booking",
+  "name": "<%=data.componentName%>",
   "version": "0.0.0",
-  "author": "Everis",
-  "description": "Manage my booking npm dependencies",
+  "author": "<% if(data.author) %><%=data.author.toLowerCase()%>",
+  "description": "<%=data.componentName%> npm dependencies",
   "scripts": {
     "build": "gulp build",
     "test": "karma start config/karma.conf.js",

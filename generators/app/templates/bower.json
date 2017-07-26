@@ -1,9 +1,9 @@
 {
-  "name": "web-manage-my-booking",
-  "description": "Manage my booking bower dependencies",
+  "name": "<%=data.componentName%>",
+  "description": "<%=data.componentName%> bower dependencies",
   "main": "src/index.html",
   "authors": [
-    "everis"
+    "<% if(data.author) %><%=data.author.toLowerCase()%>"
   ],
   "license": "MIT",
   "homepage": "",
